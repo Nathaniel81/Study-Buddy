@@ -1,5 +1,12 @@
 from django.db import migrations, models
+
 class Migration(migrations.Migration):
+    """
+    A migration to add fields to the User model.
+
+    Dependencies:
+    - base.0001_initial
+    """
 
     dependencies = [
         ('base', '0001_initial'),
