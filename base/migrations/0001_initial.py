@@ -1,4 +1,6 @@
-
+"""
+Create models for base app.
+"""
 
 from django.conf import settings
 import django.contrib.auth.models
