@@ -4,12 +4,19 @@ from .models import Room, User
 
 
 class MyUserCreationForm(UserCreationForm):
+    """
+    A form for creating a new user, extending Django's built-in UserCreationForm
+    and adding the 'name' field.
+    """
     class Meta:
         model = User
         fields = ['name', 'username', 'email', 'password1', 'password2']
 
 
 class RoomForm(ModelForm):
+    """
+    A form for creating or updating a Room instance.
+    """
     class Meta:
         model = Room
         fields = '__all__'
@@ -17,6 +24,9 @@ class RoomForm(ModelForm):
 
 
 class UserForm(ModelForm):
+    """
+    A form for creating or updating a User instance.
+    """
     class Meta:
         model = User
         fields = ['avatar', 'name', 'username', 'email', 'bio']
