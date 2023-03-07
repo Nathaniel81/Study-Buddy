@@ -14,7 +14,7 @@ git clone https://github.com/Nathaniel81/StudyBud.git
 
 --> Move into the directory where we have the project files : 
 ```bash
-cd StudyBud
+cd Study-Buddy
 
 ```
 
